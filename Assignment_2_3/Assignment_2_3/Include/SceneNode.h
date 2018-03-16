@@ -17,6 +17,7 @@ public://type definitions
 private: //private members
 	std::vector<ptr> _children;
 	SceneNode* _parent;
+	int _zIndex = 0;
 
 public:// public methods
 	SceneNode();
@@ -29,6 +30,9 @@ public:// public methods
 
 	sf::Vector2f getWorldPosition() const;
 	sf::Transform getWorldTransform() const;
+
+	int getZIndex();
+	void setZIndex(int z);
 
 private: //private methods
 	virtual void updateSelf(sf::Time dt);

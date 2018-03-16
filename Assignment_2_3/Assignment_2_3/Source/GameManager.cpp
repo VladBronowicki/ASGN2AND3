@@ -5,7 +5,7 @@ const float GameManager::_playerSpeed = 5.0f;
 const sf::Time GameManager::_timePerFrame = sf::seconds(1.f / 120.f);
 
 GameManager::GameManager() :
-	_window(sf::VideoMode(1600, 9000), "Assignment 2 & 3", sf::Style::Close),
+	_window(sf::VideoMode(1600, 900), "Assignment 2 & 3", sf::Style::Close),
 	_gameScene(_window),
 	_font(),
 	_statisticText(),

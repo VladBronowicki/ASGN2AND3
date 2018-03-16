@@ -35,7 +35,4 @@ public:
 private:
 	void loadTextures();
 	void buildScene();
-
-
 };
-

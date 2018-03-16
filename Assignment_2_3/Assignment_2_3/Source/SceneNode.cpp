@@ -53,6 +53,16 @@ sf::Transform SceneNode::getWorldTransform() const
 	return transform;
 }
 
+int SceneNode::getZIndex()
+{
+	return _zIndex;
+}
+
+void SceneNode::setZIndex(int z)
+{
+	_zIndex = z;
+}
+
 void SceneNode::updateSelf(sf::Time dt)
 {
 	//TODO: Add implementation
