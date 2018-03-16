@@ -14,7 +14,7 @@ inline void ResourceContainer<identifier, resource>::load(identifier id, const s
 {
 	std::unique_ptr<resource> res(new Resource());
 	if (!resource->loadFromFile(filename, param))
-		throw std::runtime_error("ReserouceContainer::load faild to load " + filename);
+		throw std::runtime_error("ReserouceContainer::load faildBlueGuy.png to load " + filename);
 	insert(id, std::move(res));
 }
 

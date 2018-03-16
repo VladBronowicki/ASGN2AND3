@@ -16,4 +16,4 @@ namespace Textures {
 template <typename identifier, typename resource>
 class ResourceContainer;
 
-typedef ResourceContainer<sf::Texture, Textures::ID> TextureContainer;
+typedef ResourceContainer<Textures::ID, sf::Texture> TextureContainer;
